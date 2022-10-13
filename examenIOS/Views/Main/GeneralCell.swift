@@ -35,10 +35,6 @@ class GeneralCell: UITableViewCell {
     generalText.text = "Take photo"
   }
   
-  @objc func uploadPhoto() {
-    
-  }
-  
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
