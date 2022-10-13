@@ -106,7 +106,8 @@ class ButtonCell: UITableViewCell {
   }
   
   // TODO: quedo pendiente la subida con el nombre del usuario
-  
+  // TODO: separar en un controlador
+
   func uploadImage() {
     
     let imageName: String = String("test.png")

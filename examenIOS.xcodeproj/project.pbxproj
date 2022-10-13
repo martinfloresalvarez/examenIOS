@@ -134,6 +134,7 @@
 				D1A6A59828F7A11F00E13FB0 /* Main */,
 				D13F644328F701230034CF86 /* Charts */,
 				D13F642D28F646FD0034CF86 /* Extensions */,
+				D1A6A59928F7A59A00E13FB0 /* Controller */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +196,6 @@
 		D13F644328F701230034CF86 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				D13F644128F65EE00034CF86 /* ChartTableView.swift */,
 				D13F644928F724120034CF86 /* ChartView.swift */,
 			);
 			path = Charts;
@@ -204,13 +204,21 @@
 		D1A6A59828F7A11F00E13FB0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D13F642428F644480034CF86 /* MainTableView.swift */,
 				D13F642828F645EE0034CF86 /* TextFieldCell.swift */,
 				D13F643B28F64E480034CF86 /* ButtonCell.swift */,
 				D13F644D28F74C160034CF86 /* GeneralCell.swift */,
 				D13F643D28F650EC0034CF86 /* TextCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		D1A6A59928F7A59A00E13FB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D13F644128F65EE00034CF86 /* ChartTableView.swift */,
+				D13F642428F644480034CF86 /* MainTableView.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
