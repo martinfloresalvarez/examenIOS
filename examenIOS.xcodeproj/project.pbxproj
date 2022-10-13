@@ -117,6 +117,7 @@
 				D13F641928F642BB0034CF86 /* Provider */,
 				D13F641828F642A40034CF86 /* Model */,
 				D13F641728F642900034CF86 /* Views */,
+				D1A6A59928F7A59A00E13FB0 /* Controller */,
 				D13F640228F640890034CF86 /* AppDelegate.swift */,
 				D13F640428F640890034CF86 /* SceneDelegate.swift */,
 				D13F640628F640890034CF86 /* RootView.swift */,
@@ -134,7 +135,6 @@
 				D1A6A59828F7A11F00E13FB0 /* Main */,
 				D13F644328F701230034CF86 /* Charts */,
 				D13F642D28F646FD0034CF86 /* Extensions */,
-				D1A6A59928F7A59A00E13FB0 /* Controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,13 +212,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		D1A6A59928F7A59A00E13FB0 /* Controllers */ = {
+		D1A6A59928F7A59A00E13FB0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				D13F644128F65EE00034CF86 /* ChartTableView.swift */,
 				D13F642428F644480034CF86 /* MainTableView.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
