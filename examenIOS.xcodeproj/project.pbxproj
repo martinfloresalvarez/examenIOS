@@ -9,21 +9,67 @@
 /* Begin PBXBuildFile section */
 		D13F640328F640890034CF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F640228F640890034CF86 /* AppDelegate.swift */; };
 		D13F640528F640890034CF86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F640428F640890034CF86 /* SceneDelegate.swift */; };
-		D13F640728F640890034CF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F640628F640890034CF86 /* ViewController.swift */; };
-		D13F640A28F640890034CF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13F640828F640890034CF86 /* Main.storyboard */; };
+		D13F640728F640890034CF86 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F640628F640890034CF86 /* RootView.swift */; };
 		D13F640C28F6408B0034CF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13F640B28F6408B0034CF86 /* Assets.xcassets */; };
 		D13F640F28F6408B0034CF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13F640D28F6408B0034CF86 /* LaunchScreen.storyboard */; };
+		D13F641F28F6430C0034CF86 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F641D28F6430C0034CF86 /* ApiManager.swift */; };
+		D13F642028F6430C0034CF86 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F641E28F6430C0034CF86 /* ServiceManager.swift */; };
+		D13F642328F643A10034CF86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F642228F643A10034CF86 /* Constants.swift */; };
+		D13F642528F644480034CF86 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F642428F644480034CF86 /* MainTableView.swift */; };
+		D13F642928F645EE0034CF86 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F642828F645EE0034CF86 /* TextFieldCell.swift */; };
+		D13F642C28F6466C0034CF86 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D13F642B28F6466C0034CF86 /* Alamofire */; };
+		D13F642F28F6470C0034CF86 /* UITextCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F642E28F6470C0034CF86 /* UITextCharacters.swift */; };
+		D13F643228F6478C0034CF86 /* FontsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F643128F6478C0034CF86 /* FontsExtension.swift */; };
+		D13F643428F647E30034CF86 /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F643328F647E30034CF86 /* ColorsExtension.swift */; };
+		D13F643628F648410034CF86 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F643528F648410034CF86 /* Util.swift */; };
+		D13F643828F64A880034CF86 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F643728F64A880034CF86 /* Charts.swift */; };
+		D13F643A28F64BB50034CF86 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D13F643928F64BB50034CF86 /* .swiftlint.yml */; };
+		D13F643C28F64E480034CF86 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F643B28F64E480034CF86 /* ButtonCell.swift */; };
+		D13F643E28F650EC0034CF86 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F643D28F650EC0034CF86 /* TextCell.swift */; };
+		D13F644228F65EE00034CF86 /* ChartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F644128F65EE00034CF86 /* ChartTableView.swift */; };
+		D13F644828F705120034CF86 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = D13F644728F705120034CF86 /* Charts */; };
+		D13F644A28F724120034CF86 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F644928F724120034CF86 /* ChartView.swift */; };
+		D13F644C28F730540034CF86 /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F644B28F730540034CF86 /* LabelExtension.swift */; };
+		D13F644E28F74C160034CF86 /* GeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F644D28F74C160034CF86 /* GeneralCell.swift */; };
+		D1A6A56528F75EE300E13FB0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A56428F75EE300E13FB0 /* FirebaseAnalytics */; };
+		D1A6A56728F75EE300E13FB0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A56628F75EE300E13FB0 /* FirebaseAnalyticsSwift */; };
+		D1A6A56928F75EE300E13FB0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A56828F75EE300E13FB0 /* FirebaseAuth */; };
+		D1A6A56B28F75EE300E13FB0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A56A28F75EE300E13FB0 /* FirebaseDatabase */; };
+		D1A6A56D28F75EE300E13FB0 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A56C28F75EE300E13FB0 /* FirebaseDatabaseSwift */; };
+		D1A6A56F28F75EE300E13FB0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A56E28F75EE300E13FB0 /* FirebaseFirestore */; };
+		D1A6A57128F75EE300E13FB0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A57028F75EE300E13FB0 /* FirebaseFirestoreSwift */; };
+		D1A6A57328F75EE300E13FB0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D1A6A57228F75EE300E13FB0 /* FirebaseStorage */; };
+		D1A6A57528F76A5600E13FB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1A6A57428F76A5600E13FB0 /* GoogleService-Info.plist */; };
+		D1A6A57728F7790900E13FB0 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A6A57628F7790900E13FB0 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D13F63FF28F640890034CF86 /* examenIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = examenIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13F640228F640890034CF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D13F640428F640890034CF86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D13F640628F640890034CF86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D13F640928F640890034CF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D13F640628F640890034CF86 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		D13F640B28F6408B0034CF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D13F640E28F6408B0034CF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D13F641028F6408B0034CF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13F641D28F6430C0034CF86 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D13F641E28F6430C0034CF86 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		D13F642228F643A10034CF86 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D13F642428F644480034CF86 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		D13F642828F645EE0034CF86 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		D13F642E28F6470C0034CF86 /* UITextCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextCharacters.swift; sourceTree = "<group>"; };
+		D13F643128F6478C0034CF86 /* FontsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsExtension.swift; sourceTree = "<group>"; };
+		D13F643328F647E30034CF86 /* ColorsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
+		D13F643528F648410034CF86 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		D13F643728F64A880034CF86 /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		D13F643928F64BB50034CF86 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D13F643B28F64E480034CF86 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		D13F643D28F650EC0034CF86 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		D13F644128F65EE00034CF86 /* ChartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableView.swift; sourceTree = "<group>"; };
+		D13F644928F724120034CF86 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		D13F644B28F730540034CF86 /* LabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
+		D13F644D28F74C160034CF86 /* GeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCell.swift; sourceTree = "<group>"; };
+		D1A6A57428F76A5600E13FB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1A6A57628F7790900E13FB0 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A6A56D28F75EE300E13FB0 /* FirebaseDatabaseSwift in Frameworks */,
+				D1A6A56B28F75EE300E13FB0 /* FirebaseDatabase in Frameworks */,
+				D1A6A56728F75EE300E13FB0 /* FirebaseAnalyticsSwift in Frameworks */,
+				D1A6A57328F75EE300E13FB0 /* FirebaseStorage in Frameworks */,
+				D1A6A56928F75EE300E13FB0 /* FirebaseAuth in Frameworks */,
+				D13F642C28F6466C0034CF86 /* Alamofire in Frameworks */,
+				D1A6A56F28F75EE300E13FB0 /* FirebaseFirestore in Frameworks */,
+				D13F644828F705120034CF86 /* Charts in Frameworks */,
+				D1A6A56528F75EE300E13FB0 /* FirebaseAnalytics in Frameworks */,
+				D1A6A57128F75EE300E13FB0 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +96,7 @@
 		D13F63F628F640890034CF86 = {
 			isa = PBXGroup;
 			children = (
+				D13F643928F64BB50034CF86 /* .swiftlint.yml */,
 				D13F640128F640890034CF86 /* examenIOS */,
 				D13F640028F640890034CF86 /* Products */,
 			);
@@ -56,15 +113,104 @@
 		D13F640128F640890034CF86 /* examenIOS */ = {
 			isa = PBXGroup;
 			children = (
+				D13F642128F643870034CF86 /* Util */,
+				D13F641928F642BB0034CF86 /* Provider */,
+				D13F641828F642A40034CF86 /* Model */,
+				D13F641728F642900034CF86 /* Views */,
 				D13F640228F640890034CF86 /* AppDelegate.swift */,
 				D13F640428F640890034CF86 /* SceneDelegate.swift */,
-				D13F640628F640890034CF86 /* ViewController.swift */,
-				D13F640828F640890034CF86 /* Main.storyboard */,
+				D13F640628F640890034CF86 /* RootView.swift */,
 				D13F640B28F6408B0034CF86 /* Assets.xcassets */,
 				D13F640D28F6408B0034CF86 /* LaunchScreen.storyboard */,
 				D13F641028F6408B0034CF86 /* Info.plist */,
+				D1A6A57428F76A5600E13FB0 /* GoogleService-Info.plist */,
 			);
 			path = examenIOS;
+			sourceTree = "<group>";
+		};
+		D13F641728F642900034CF86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1A6A59828F7A11F00E13FB0 /* Main */,
+				D13F644328F701230034CF86 /* Charts */,
+				D13F642D28F646FD0034CF86 /* Extensions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D13F641828F642A40034CF86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D13F643728F64A880034CF86 /* Charts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D13F641928F642BB0034CF86 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				D1A6A57628F7790900E13FB0 /* UserDefaults.swift */,
+				D13F641C28F642F90034CF86 /* Services */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		D13F641C28F642F90034CF86 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D13F641D28F6430C0034CF86 /* ApiManager.swift */,
+				D13F641E28F6430C0034CF86 /* ServiceManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D13F642128F643870034CF86 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D13F643528F648410034CF86 /* Util.swift */,
+				D13F643028F647800034CF86 /* Extensions */,
+				D13F642228F643A10034CF86 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D13F642D28F646FD0034CF86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D13F642E28F6470C0034CF86 /* UITextCharacters.swift */,
+				D13F644B28F730540034CF86 /* LabelExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D13F643028F647800034CF86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D13F643128F6478C0034CF86 /* FontsExtension.swift */,
+				D13F643328F647E30034CF86 /* ColorsExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D13F644328F701230034CF86 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				D13F644128F65EE00034CF86 /* ChartTableView.swift */,
+				D13F644928F724120034CF86 /* ChartView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		D1A6A59828F7A11F00E13FB0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D13F642428F644480034CF86 /* MainTableView.swift */,
+				D13F642828F645EE0034CF86 /* TextFieldCell.swift */,
+				D13F643B28F64E480034CF86 /* ButtonCell.swift */,
+				D13F644D28F74C160034CF86 /* GeneralCell.swift */,
+				D13F643D28F650EC0034CF86 /* TextCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +223,25 @@
 				D13F63FB28F640890034CF86 /* Sources */,
 				D13F63FC28F640890034CF86 /* Frameworks */,
 				D13F63FD28F640890034CF86 /* Resources */,
+				D13F641628F640FB0034CF86 /* Run Swiftlint Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = examenIOS;
+			packageProductDependencies = (
+				D13F642B28F6466C0034CF86 /* Alamofire */,
+				D13F644728F705120034CF86 /* Charts */,
+				D1A6A56428F75EE300E13FB0 /* FirebaseAnalytics */,
+				D1A6A56628F75EE300E13FB0 /* FirebaseAnalyticsSwift */,
+				D1A6A56828F75EE300E13FB0 /* FirebaseAuth */,
+				D1A6A56A28F75EE300E13FB0 /* FirebaseDatabase */,
+				D1A6A56C28F75EE300E13FB0 /* FirebaseDatabaseSwift */,
+				D1A6A56E28F75EE300E13FB0 /* FirebaseFirestore */,
+				D1A6A57028F75EE300E13FB0 /* FirebaseFirestoreSwift */,
+				D1A6A57228F75EE300E13FB0 /* FirebaseStorage */,
+			);
 			productName = examenIOS;
 			productReference = D13F63FF28F640890034CF86 /* examenIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +270,11 @@
 				Base,
 			);
 			mainGroup = D13F63F628F640890034CF86;
+			packageReferences = (
+				D13F642A28F6466C0034CF86 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D13F644628F705120034CF86 /* XCRemoteSwiftPackageReference "Charts" */,
+				D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D13F640028F640890034CF86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,36 +289,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13F643A28F64BB50034CF86 /* .swiftlint.yml in Resources */,
+				D1A6A57528F76A5600E13FB0 /* GoogleService-Info.plist in Resources */,
 				D13F640F28F6408B0034CF86 /* LaunchScreen.storyboard in Resources */,
 				D13F640C28F6408B0034CF86 /* Assets.xcassets in Resources */,
-				D13F640A28F640890034CF86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D13F641628F640FB0034CF86 /* Run Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D13F63FB28F640890034CF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13F640728F640890034CF86 /* ViewController.swift in Sources */,
+				D13F642F28F6470C0034CF86 /* UITextCharacters.swift in Sources */,
+				D13F641F28F6430C0034CF86 /* ApiManager.swift in Sources */,
+				D13F643E28F650EC0034CF86 /* TextCell.swift in Sources */,
+				D13F642928F645EE0034CF86 /* TextFieldCell.swift in Sources */,
+				D13F644C28F730540034CF86 /* LabelExtension.swift in Sources */,
+				D13F644E28F74C160034CF86 /* GeneralCell.swift in Sources */,
+				D13F640728F640890034CF86 /* RootView.swift in Sources */,
 				D13F640328F640890034CF86 /* AppDelegate.swift in Sources */,
+				D13F643428F647E30034CF86 /* ColorsExtension.swift in Sources */,
+				D13F644228F65EE00034CF86 /* ChartTableView.swift in Sources */,
+				D13F642528F644480034CF86 /* MainTableView.swift in Sources */,
+				D13F643628F648410034CF86 /* Util.swift in Sources */,
 				D13F640528F640890034CF86 /* SceneDelegate.swift in Sources */,
+				D13F644A28F724120034CF86 /* ChartView.swift in Sources */,
+				D13F643828F64A880034CF86 /* Charts.swift in Sources */,
+				D13F642028F6430C0034CF86 /* ServiceManager.swift in Sources */,
+				D1A6A57728F7790900E13FB0 /* UserDefaults.swift in Sources */,
+				D13F643228F6478C0034CF86 /* FontsExtension.swift in Sources */,
+				D13F642328F643A10034CF86 /* Constants.swift in Sources */,
+				D13F643C28F64E480034CF86 /* ButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D13F640828F640890034CF86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D13F640928F640890034CF86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D13F640D28F6408B0034CF86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +487,6 @@
 				INFOPLIST_FILE = examenIOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +514,6 @@
 				INFOPLIST_FILE = examenIOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +551,86 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D13F642A28F6466C0034CF86 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D13F644628F705120034CF86 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D13F642B28F6466C0034CF86 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D13F642A28F6466C0034CF86 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D13F644728F705120034CF86 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D13F644628F705120034CF86 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		D1A6A56428F75EE300E13FB0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D1A6A56628F75EE300E13FB0 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		D1A6A56828F75EE300E13FB0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D1A6A56A28F75EE300E13FB0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		D1A6A56C28F75EE300E13FB0 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		D1A6A56E28F75EE300E13FB0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D1A6A57028F75EE300E13FB0 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		D1A6A57228F75EE300E13FB0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A6A56328F75EE300E13FB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D13F63F728F640890034CF86 /* Project object */;
 }
